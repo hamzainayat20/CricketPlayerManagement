@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Cricket Player Management</h1>
+
+    <!-- Add Player Form -->
+    <div class="form-container">
+      <h2>Add New Player</h2>
+      <!-- Removed Player ID input because the API auto-generates IDs -->
+      <input type="text" id="playerName" placeholder="Player Name">
+      <input type="text" id="stats" placeholder="Stats">
+      <input type="text" id="country" placeholder="Country">
+      <button id="addPlayerBtn">Add Player</button>
+    </div>
+
+    <!-- Update Player Form -->
+    <div class="form-container">
+      <h2>Update Player</h2>
+      <input type="text" id="updateId" placeholder="Player ID to Update" readonly>
+      <input type="text" id="updatePlayerName" placeholder="Updated Name">
+      <input type="text" id="updateStats" placeholder="Updated Stats">
+      <input type="text" id="updateCountry" placeholder="Updated Country">
+      <button id="updatePlayerBtn">Update Player</button>
+    </div>
+
+    <!-- List of Players -->
+    <h2>Player List</h2>
+    <ul id="playerList"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
